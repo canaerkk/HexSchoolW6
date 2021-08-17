@@ -275,6 +275,9 @@
 .top-0 {
   top: 0 !important; }
 
+.top-40 {
+  top: 40% !important; }
+
 .top-50 {
   top: 50% !important; }
 
@@ -283,6 +286,9 @@
 
 .bottom-0 {
   bottom: 0 !important; }
+
+.bottom-40 {
+  bottom: 40% !important; }
 
 .bottom-50 {
   bottom: 50% !important; }
@@ -293,6 +299,9 @@
 .start-0 {
   left: 0 !important; }
 
+.start-40 {
+  left: 40% !important; }
+
 .start-50 {
   left: 50% !important; }
 
@@ -301,6 +310,9 @@
 
 .end-0 {
   right: 0 !important; }
+
+.end-40 {
+  right: 40% !important; }
 
 .end-50 {
   right: 50% !important; }

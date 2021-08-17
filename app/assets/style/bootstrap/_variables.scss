@@ -275,6 +275,7 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  40: 40%, //new
   50: 50%,
   100: 100%
 ) !default;
@@ -1086,10 +1087,10 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 
 // scss-docs-start card-variables
 $card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+$card-spacer-x:                     0; //$spacer !default;
 $card-title-spacer-y:               $spacer / 2 !default;
-$card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-width:                 0; //$border-width !default;
+$card-border-radius:                0; //$border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y / 2 !default;
