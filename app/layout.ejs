@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./assets/style/all.css">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -26,11 +25,63 @@
       </li>
     </ul>
   </div>
-  <a class="nav-link position-relative ms-auto" href="#" tabindex="-1" aria-disabled="true" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="nav-link position-relative ms-auto" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     <span class="material-icons text-primary">confirmation_number</span>
     <span class="position-absolute top-0 end-0 badge rounded-circle bg-secondary fs-xs">3</span>
   </a>
+  <!-- Modal -->
+<div class="modal right fade modal-dialog modal-dialog-scrollable" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Cart List</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sunt magnam porro saepe autem aperiam! Distinctio molestias rerum enim tempore aliquid omnis sint voluptates perferendis officia, necessitatibus quibusdam incidunt molestiae?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sunt magnam porro saepe autem aperiam! Distinctio molestias rerum enim tempore aliquid omnis sint voluptates perferendis officia, necessitatibus quibusdam incidunt molestiae?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sunt magnam porro saepe autem aperiam! Distinctio molestias rerum enim tempore aliquid omnis sint voluptates perferendis officia, necessitatibus quibusdam incidunt molestiae?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sunt magnam porro saepe autem aperiam! Distinctio molestias rerum enim tempore aliquid omnis sint voluptates perferendis officia, necessitatibus quibusdam incidunt molestiae?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sunt magnam porro saepe autem aperiam! Distinctio molestias rerum enim tempore aliquid omnis sint voluptates perferendis officia, necessitatibus quibusdam incidunt molestiae?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">前往結帳</button>
+      </div>
+    </div>
+  </div>
+</div>
 </nav>
+<% if(current=='index'){ %>
+
+<div class="bg-main d-flex align-items-end align-items-md-center">
+  <div class="container mb-9 mb-md-0">
+    <div class="row">
+      <div class="col offset-md-1">
+        <h1 class="text-white fw-bold">台北當代藝術展</h1>
+        <p class="h4 fw-bold text-white ">01 JUN - 31 OCT</p>
+        <div>
+          <a href="#" class="btn btn-secondary btn-lg">購買票券</a>
+          <a href="#" class="btn btn-outline-light btn-lg">詳細資訊</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% } %>
+<div class="nav-scroller">
+  <nav class="container nav" aria-label="Secondary navigation">
+    <a class="nav-link active" aria-current="page" href="#">音樂</a>
+    <a class="nav-link" href="#">戲劇</a>
+    <a class="nav-link" href="#">設計</a>
+    <a class="nav-link" href="#">藝術</a>
+    <a class="nav-link" href="#">美食</a>
+    <a class="nav-link" href="#">旅遊</a>
+    <a class="nav-link" href="#">電影</a>
+    <a class="nav-link" href="#">親子</a>
+    <a class="nav-link" href="#">期間限定</a>
+  </nav>
+</div>
+
 
   <%- contents %>
 
@@ -38,6 +89,7 @@
     footer
   </footer>
   <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
