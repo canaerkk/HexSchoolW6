@@ -59,6 +59,11 @@
   .link-black:hover, .link-black:focus {
     color: black; }
 
+.link-shawdowcolor {
+  color: #190014; }
+  .link-shawdowcolor:hover, .link-shawdowcolor:focus {
+    color: #140010; }
+
 .ratio {
   position: relative;
   width: 100%; }
@@ -394,6 +399,9 @@
 
 .border-black {
   border-color: #000 !important; }
+
+.border-shawdowcolor {
+  border-color: #190014 !important; }
 
 .border-1 {
   border-width: 1px !important; }
@@ -1393,6 +1401,9 @@
 .text-black {
   color: #000 !important; }
 
+.text-shawdowcolor {
+  color: #190014 !important; }
+
 .text-body {
   color: #212529 !important; }
 
@@ -1438,11 +1449,29 @@
 .bg-black {
   background-color: #000 !important; }
 
+.bg-shawdowcolor {
+  background-color: #190014 !important; }
+
 .bg-body {
   background-color: #fff !important; }
 
 .bg-transparent {
   background-color: transparent !important; }
+
+.bg-opacity-0 {
+  opacity: 0 !important; }
+
+.bg-opacity-25 {
+  opacity: 0.25 !important; }
+
+.bg-opacity-50 {
+  opacity: 0.5 !important; }
+
+.bg-opacity-75 {
+  opacity: 0.75 !important; }
+
+.bg-opacity-100 {
+  opacity: 1 !important; }
 
 .bg-gradient {
   background-image: var(--bs-gradient) !important; }

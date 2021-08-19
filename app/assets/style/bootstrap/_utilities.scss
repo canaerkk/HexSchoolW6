@@ -527,6 +527,17 @@ $utilities: map-merge(
         )
       )
     ),
+    "opacity": (
+      property: opacity,
+      class:bg-opacity,
+      values: (
+        0: 0,
+        25: .25,
+        50: .5,
+        75: .75,
+        100: 1,
+      )
+    ),
     // scss-docs-end utils-bg-color
     "gradient": (
       property: background-image,
