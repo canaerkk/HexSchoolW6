@@ -259,11 +259,13 @@ $spacers: (
   2: $spacer * .5,
   3: $spacer * .75, //$spacer
   4: $spacer,       //$spacer * 1.5,
-  5: $spacer * 1.5, //new
-  6: $spacer * 2,   //new
-  7: $spacer * 2.5, //new
-  8: $spacer * 3.75,//new
-  9: $spacer * 5,    //new
+  5: $spacer * 1.25, //new
+  6: $spacer * 1.5, //new
+  7: $spacer * 2,   //new
+  8: $spacer * 2.25, //new
+  9: $spacer * 2.5, //new
+  10: $spacer * 3.75,//new
+  11: $spacer * 5,    //new
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -592,8 +594,8 @@ $table-variants: (
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         .625rem !default;
+$input-btn-padding-x:         1rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
