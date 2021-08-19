@@ -60,6 +60,9 @@
     white-space: nowrap;
     justify-content: center;
 }
+.card-size{
+  height: 21.875rem;
+}
 @include media-breakpoint-down(md){
 
     .btn-lg{
@@ -68,10 +71,13 @@
     .align-items-center{
         align-items: flex-end;
     }
+    .card-size{
+      height: 100%;
+    }
 }
 .img{
     object-fit: cover;
-    height: 21.875rem;
+    height: 100%;
 }
 .fab-x15{
   font-size: 24px;
