@@ -1,4 +1,5 @@
 @import "bootstrap/bootstrap";
+@import "fonts";
 
 .bg-main{
     background-image: url(../images/mainbg.jpg);
@@ -67,4 +68,13 @@
     .align-items-center{
         align-items: flex-end;
     }
+}
+.img{
+    object-fit: cover;
+    height: 21.875rem;
+}
+.fab-x15{
+  font-size: 24px;
+  line-height: 1.5;
+  vertical-align: text-top;
 }
