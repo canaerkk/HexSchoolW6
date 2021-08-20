@@ -61,10 +61,9 @@
     justify-content: center;
 }
 .card-size{
-  height: 21.875rem;
+    height: 30.125rem;
 }
 @include media-breakpoint-down(md){
-
     .btn-lg{
         padding: .625rem 3.125rem;
     }
@@ -72,10 +71,7 @@
         align-items: flex-end;
     }
     .card-size{
-      height: 100%;
-    }
-    .card-img{
-      height: 464px;
+      min-height: 30.125rem;
     }
 }
 .img{
