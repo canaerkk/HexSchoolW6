@@ -84,7 +84,8 @@
 </div>
 
 
-  <div class="container">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<div class="container">
   <h2 class="mt-6 mt-md-10 fw-bold">熱門特展</h2>
   <div class="row mt-2 mt-md-6 mb-md-5">
     <div class="col">
@@ -174,17 +175,62 @@
 <div class="container">
   <h2 class="mt-6 mt-md-10 fw-bold">直播回顧</h2>
   <div class="card bg-dark text-white">
-    <img src="./assets/images/people2.png" class="card-img" alt="...">
-    <div class="card-img-overlay bg-shawdowcolor bg-opacity-75">
-      <div>
-        <h3 class="card-title h2 mt-9 mb-7">開幕對談 | 藝術展演巡禮</h3>
+    <img src="./assets/images/people2.png" class="card-img card-size" alt="...">
+    <div class="card-img-overlay bg-shawdowcolor bg-opacity-75 col col-md-5 px-6 py-9">
+        <h3 class="card-title h2 mb-7">開幕對談 | 藝術展演巡禮</h3>
         <img src="./assets/images/people.png" alt="">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text">Last updated 3 mins ago</p>
+        <h4 class="card-text">臺北現代聯合總監｜Ken Hsu</h4>
+        <p class="card-text">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
+        <a href="#" class="btn btn-secondary">點此觀看</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2 class="mt-6 mt-md-10 fw-bold">猜你也喜歡...</h2>
+  <div class="row">
+    <div class="col">
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide d-flex flex-column">
+            <img src="./assets/images/m1.jpg" alt="1">
+            <h3 class="h4 fw-bold">No.22 線上設計展</h3>
+            <span class="h4">$350</span>
+          </div>
+          <div class="swiper-slide d-flex flex-column">
+            <img src="./assets/images/m2.jpg" alt="1">
+            <h3 class="h4 fw-bold">No.22 線上設計展</h3>
+            <span class="h4">$350</span>
+          </div>
+          <div class="swiper-slide d-flex flex-column">
+            <img src="./assets/images/m3.jpg" alt="1">
+            <h3 class="h4 fw-bold">No.22 線上設計展</h3>
+            <span class="h4">$350</span>
+          </div>
+          <div class="swiper-slide d-flex flex-column">
+            <img src="./assets/images/m4.jpg" alt="1">
+            <h3 class="h4 fw-bold">No.22 線上設計展</h3>
+            <span class="h4">$350</span>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
 
   <footer class="footer">
     footer

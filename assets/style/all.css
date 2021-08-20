@@ -10559,6 +10559,31 @@ textarea.form-control-lg {
 body {
   font-family: 'Noto Sans TC', 'Roboto', sans-serif; }
 
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: flex-start; }
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
 .bg-main {
   background-image: url(../images/mainbg.jpg);
   background-repeat: no-repeat;
@@ -10619,7 +10644,7 @@ body {
           justify-content: center; }
 
 .card-size {
-  height: 21.875rem; }
+  height: 30.125rem; }
 
 @media (max-width: 767.98px) {
   .btn-lg, .btn-group-lg > .btn {
@@ -10629,9 +10654,7 @@ body {
         -ms-flex-align: end;
             align-items: flex-end; }
   .card-size {
-    height: 100%; }
-  .card-img {
-    height: 464px; } }
+    min-height: 30.125rem; } }
 
 .img {
   -o-object-fit: cover;
