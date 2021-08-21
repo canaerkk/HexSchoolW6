@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./assets/style/all.css">
+
 </head>
 
 <body>
@@ -34,19 +36,109 @@
 <div class="modal right fade modal-dialog modal-dialog-scrollable" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Cart List</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header bg-black">
+        <h5 class="modal-title text-white h1" id="staticBackdropLabel">Cart List</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sunt magnam porro saepe autem aperiam! Distinctio molestias rerum enim tempore aliquid omnis sint voluptates perferendis officia, necessitatibus quibusdam incidunt molestiae?
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sunt magnam porro saepe autem aperiam! Distinctio molestias rerum enim tempore aliquid omnis sint voluptates perferendis officia, necessitatibus quibusdam incidunt molestiae?
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sunt magnam porro saepe autem aperiam! Distinctio molestias rerum enim tempore aliquid omnis sint voluptates perferendis officia, necessitatibus quibusdam incidunt molestiae?
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sunt magnam porro saepe autem aperiam! Distinctio molestias rerum enim tempore aliquid omnis sint voluptates perferendis officia, necessitatibus quibusdam incidunt molestiae?
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sunt magnam porro saepe autem aperiam! Distinctio molestias rerum enim tempore aliquid omnis sint voluptates perferendis officia, necessitatibus quibusdam incidunt molestiae?
+      <div class="modal-body bg-black">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="card-header bg-white">
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card card-size-small">
+                <div class="row g-0 bg-white">
+                  <div class="col-3 mx-4">
+                    <img src="./assets/images/index-1.jpg" class="img img-fluid"  alt="card1">
+                  </div>
+                  <div class="col-6">
+                    <div class="card-body bg-white py-0">
+                      <div class="d-flex flex-column justify-content-between">
+                        <h3 class="card-title me-auto mt-4 mt-md-0">2020 台味設計展</h3>
+                        <h4 class="fw-bold">01 JUN — 31 OCT</h4>
+                        <span class="text-muted mb-3 mb-md-0">全票</span>
+                      </div>
+                      <p class="card-text h4">$350</p>
+                    </div>
+                  </div>
+                  <div class="d-flex offset-md-1 col col-md-1 flex-column flex-md-row-reverse justify-content-md-between align-items-center">
+                    <h3 class="fw-bold h4"><span class="material-icons-outlined">add</span></h3>
+                    <h3 class="fw-bold h4">01</h3>
+                    <h3 class="fw-bold h4"><span class="material-icons-outlined">remove</span></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="card-header bg-white">
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card card-size-small">
+                <div class="row g-0 bg-white">
+                  <div class="col-3 mx-4">
+                    <img src="./assets/images/index-2.jpg" class="img img-fluid"  alt="card1">
+                  </div>
+                  <div class="col-6">
+                    <div class="card-body bg-white py-0">
+                      <div class="d-flex flex-column justify-content-between">
+                        <h3 class="card-title me-auto mt-4 mt-md-0">2020 台味設計展</h3>
+                        <h4 class="fw-bold">01 JUN — 31 OCT</h4>
+                        <span class="text-muted mb-3 mb-md-0">全票</span>
+                      </div>
+                      <p class="card-text h4">$350</p>
+                    </div>
+                  </div>
+                  <div class="d-flex offset-md-1 col col-md-1 flex-column flex-md-row-reverse justify-content-md-between align-items-center">
+                    <h3 class="fw-bold h4"><span class="material-icons-outlined">add</span></h3>
+                    <h3 class="fw-bold h4">01</h3>
+                    <h3 class="fw-bold h4"><span class="material-icons-outlined">remove</span></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="card-header bg-white">
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card card-size-small">
+                <div class="row g-0 bg-white">
+                  <div class="col-3 mx-4">
+                    <img src="./assets/images/index-3.jpg" class="img img-fluid"  alt="card1">
+                  </div>
+                  <div class="col-6">
+                    <div class="card-body bg-white py-0">
+                      <div class="d-flex flex-column justify-content-between">
+                        <h3 class="card-title me-auto mt-4 mt-md-0">2020 台味設計展</h3>
+                        <h4 class="fw-bold">01 JUN — 31 OCT</h4>
+                        <span class="text-muted mb-3 mb-md-0">全票</span>
+                      </div>
+                      <p class="card-text h4">$350</p>
+                    </div>
+                  </div>
+                  <div class="d-flex offset-md-1 col col-md-1 flex-column flex-md-row-reverse justify-content-md-between align-items-center">
+                    <h3 class="fw-bold h4"><span class="material-icons-outlined">add</span></h3>
+                    <h3 class="fw-bold h4">01</h3>
+                    <h3 class="fw-bold h4"><span class="material-icons-outlined">remove</span></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">前往結帳</button>
+      <div class="modal-footer bg-black d-flex justify-content-between">
+        <span class="text-white d-block me-6">小計</span>
+        <span class="text-white">NT$1050</span>
+        <button type="button" class="btn btn-white ms-auto">前往結帳</button>
       </div>
     </div>
   </div>
@@ -85,7 +177,52 @@
 
 
   <%- contents %>
-
+  <div class="container">
+    <h2 class="mt-6 mt-md-10 fw-bold">猜你也喜歡...</h2>
+    <div class="row">
+      <div class="col offset-md-1 col-md-11">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex flex-column">
+              <img src="./assets/images/m1.jpg" alt="1">
+              <h3 class="h4 fw-bold">No.22 線上設計展</h3>
+              <span class="h4">$350</span>
+            </div>
+            <div class="swiper-slide d-flex flex-column">
+              <img src="./assets/images/m2.jpg" alt="1">
+              <h3 class="h4 fw-bold">No.22 線上設計展</h3>
+              <span class="h4">$350</span>
+            </div>
+            <div class="swiper-slide d-flex flex-column">
+              <img src="./assets/images/m3.jpg" alt="1">
+              <h3 class="h4 fw-bold">No.22 線上設計展</h3>
+              <span class="h4">$350</span>
+            </div>
+            <div class="swiper-slide d-flex flex-column">
+              <img src="./assets/images/m4.jpg" alt="1">
+              <h3 class="h4 fw-bold">No.22 線上設計展</h3>
+              <span class="h4">$350</span>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-background bg-bottom d-flex align-items-end pb-8">
+    <div class="container">
+      <h2 class="fs-3 text-white lh-lg mb-3">想收到最新消息嗎？<br>快訂閱我們！ </h2>
+      <div class="row">
+        <div class="mb-3 col-12 col-md-4">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="button-subscribe">
+            <button class="btn btn-secondary btn-lg" type="button" id="button-subscribe">訂閱</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container d-flex justify-content-md-between">
       <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row">
@@ -105,7 +242,6 @@
   <script src="./assets/js/vendors.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/all.js"></script>
-  <% if(current=='index'){ %>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
@@ -133,6 +269,5 @@
       methodToFixLayout();
     });
     </script>
-  <% } %>
 </body>
 </html>
