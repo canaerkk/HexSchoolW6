@@ -54,7 +54,7 @@
 </nav>
 
 
-<div class="bg-main d-flex align-items-end align-items-md-center">
+<div class="bg-background bg-main d-flex align-items-end align-items-md-center">
   <div class="container mb-9 mb-md-0">
     <div class="row mt-6">
       <div class="col offset-md-1">
@@ -188,7 +188,7 @@
 <div class="container">
   <h2 class="mt-6 mt-md-10 fw-bold">猜你也喜歡...</h2>
   <div class="row">
-    <div class="col">
+    <div class="col offset-md-1 col-md-11">
       <div class="swiper-container mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide d-flex flex-column">
@@ -217,10 +217,37 @@
     </div>
   </div>
 </div>
+<div class="bg-background bg-bottom d-flex align-items-end pb-8">
+  <div class="container">
+    <h2 class="fs-3 text-white lh-lg mb-3">想收到最新消息嗎？<br>快訂閱我們！ </h2>
+    <div class="row">
+      <div class="mb-3 col-12 col-md-4">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="button-subscribe">
+          <button class="btn btn-secondary btn-lg" type="button" id="button-subscribe">訂閱</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
 
 
-  <footer class="footer">
-    footer
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container d-flex justify-content-md-between">
+      <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row">
+        <h2 class="me-4 h4">EXHIBINECTION</h2>
+        <span class="d-block h5">© 2020. All Rights Reserved.</span>
+      </div>
+      <ul class="nav justify-content-end d-none d-md-flex">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign up</a>
+        </li>
+      </ul>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -231,7 +258,7 @@
     <!-- Initialize Swiper -->
     <script>
       function swiper(slidenumber){
-      const s = new Swiper(".mySwiper", {
+      var s = new Swiper(".mySwiper", {
         slidesPerView: slidenumber,
         spaceBetween: 30,
         pagination: {

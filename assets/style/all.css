@@ -7209,7 +7209,7 @@ textarea.form-control-lg {
   line-height: 1.5 !important; }
 
 .lh-lg {
-  line-height: 2 !important; }
+  line-height: 2.25 !important; }
 
 .text-start {
   text-align: left !important; }
@@ -10580,17 +10580,23 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover; }
 
-.bg-main {
-  background-image: url(../images/mainbg.jpg);
+.bg-background {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: 50% 50%;
-  height: 480px; }
+  background-position: 50% 50%; }
+
+.bg-main {
+  height: 480px;
+  background-image: url(../images/mainbg.jpg); }
+
+.bg-bottom {
+  height: 400px;
+  background-image: url(../images/bottom1.jpg); }
 
 .navbar-brand {
   margin: 0 auto; }
