@@ -2,13 +2,19 @@
 @import "fonts";
 @import "swiper/swiper";
 
-.bg-main{
-    background-image: url(../images/mainbg.jpg);
+.bg-background{
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
     background-position: 50% 50%;
-    height: 480px;
+}
+.bg-main{
+  height: 480px;
+  background-image: url(../images/mainbg.jpg);
+}
+.bg-bottom{
+  height: 400px;
+  background-image: url(../images/bottom1.jpg);
 }
 .navbar-brand{
     margin: 0 auto;
