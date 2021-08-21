@@ -92,6 +92,34 @@
   <script src="./assets/js/vendors.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/all.js"></script>
+  <% if(current=='index'){ %>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      function swiper(slidenumber){
+      const s = new Swiper(".mySwiper", {
+        slidesPerView: slidenumber,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      })
+      };
+      function methodToFixLayout( e ) {
+        var winWidth = $(window).width();
+        if (winWidth >= 768){
+          swiper(3);
+        }else{
+          swiper(1);
+        }
+    }
+    window.addEventListener('resize', methodToFixLayout);
+    $(document).ready(function(){
+      methodToFixLayout();
+    });
+    </script>
+  <% } %>
 </body>
-
 </html>
